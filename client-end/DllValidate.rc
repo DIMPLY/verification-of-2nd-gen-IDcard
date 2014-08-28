@@ -1,0 +1,244 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Simplified, PRC) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\DllValidate.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\DllValidate.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DLLVALIDATE_DIALOG DIALOGEX 0, 0, 401, 399
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "X",IDCANCEL,369,8,25,14
+    CONTROL         "",IDC_TREE1,"SysTreeView32",TVS_HASLINES | TVS_LINESATROOT | TVS_DISABLEDRAGDROP | TVS_SHOWSELALWAYS | TVS_NOHSCROLL | TVS_INFOTIP | WS_BORDER | WS_TABSTOP,15,64,186,68
+    CONTROL         "",IDC_LIST2,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,230,63,151,68
+    EDITTEXT        IDC_EDIT1,54,139,100,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "当前类别：",IDC_STATIC,12,141,41,8
+    PUSHBUTTON      "该模糊项即为购票者",IDC_BUTTON1,227,138,78,18
+    GROUPBOX        "模糊匹配结果",IDC_STATIC,213,47,181,116
+    GROUPBOX        "选择要验证的活动/人员类别",IDC_STATIC,7,47,201,116
+    PUSHBUTTON      "无模糊匹配购票者",IDC_BUTTON2,317,138,72,18
+    PUSHBUTTON      "更正该用户/更新购票",IDC_BUTTON3,222,138,81,18,NOT WS_VISIBLE
+    PUSHBUTTON      "添加新用户/更新购票",IDC_BUTTON4,307,138,81,18,NOT WS_VISIBLE | NOT WS_TABSTOP
+    PUSHBUTTON      "锁定",IDC_BUTTON5,159,139,42,14
+    CONTROL         "",IDC_TAB3,"SysTabControl32",0x0,7,174,387,188
+    LTEXT           "现场刷卡验证客户端",IDC_TITLE,39,5,168,26
+    PUSHBUTTON      "重置",IDC_BUTTON6,314,8,50,14
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 391, 160
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "姓名",IDC_STATIC,17,8,39,17
+    LTEXT           "",IDC_Name,55,8,164,16
+    LTEXT           "性别",IDC_STATIC,17,27,17,8
+    LTEXT           "",IDC_Gender,55,27,41,8
+    LTEXT           "民族",IDC_STATIC,100,27,17,8
+    LTEXT           "",IDC_Folk,132,27,90,8
+    LTEXT           "出生",IDC_STATIC,17,44,17,8
+    LTEXT           "",IDC_BirthDay,53,44,169,8
+    LTEXT           "住址",IDC_STATIC,17,62,17,8
+    LTEXT           "",IDC_Address,54,62,168,8
+    LTEXT           "身份证号",IDC_STATIC,17,80,33,8
+    LTEXT           "",IDC_Code,57,80,163,8
+    LTEXT           "签发机关",IDC_STATIC,17,99,33,8
+    LTEXT           "",IDC_Agency,59,99,164,8
+    LTEXT           "有效期限",IDC_STATIC,17,119,33,8
+    LTEXT           "",IDC_ExpireStart,57,119,47,8
+    LTEXT           "",IDC_ExpireEnd,107,118,57,8
+    LTEXT           "",IDC_Pic,259,16,96,84
+    LTEXT           "",IDC_SAMID,18,138,136,8
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 391, 160
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "姓名",IDC_STATIC,87,68,39,17
+    LTEXT           "身份证号",IDC_STATIC,87,89,33,8
+    EDITTEXT        IDC_EDIT1,130,65,138,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,130,86,138,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "验证",IDC_BUTTON1,250,133,50,14
+    LTEXT           "我们的数据库里可能已有准确信息，如果不能确定输入正确请留空，否则会用您的填写覆盖已有数据。",IDC_STATIC_NOTE,96,17,246,26
+    LTEXT           "注  意：",IDC_STATIC,50,17,33,12
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "CompanyName", "Sky Mirror"
+            VALUE "FileDescription", "二代身份证刷卡验证客户端"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "DllValidate"
+            VALUE "LegalCopyright", "版权所有 (C) 2014"
+            VALUE "OriginalFilename", "DllValidate.EXE"
+            VALUE "ProductName", "二代身份证刷卡验证客户端"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DLLVALIDATE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 394
+        BOTTOMMARGIN, 392
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 384
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 153
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 384
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 153
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "关于 DllValidate(&A)..."
+END
+
+#endif    // Chinese (Simplified, PRC) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\DllValidate.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
